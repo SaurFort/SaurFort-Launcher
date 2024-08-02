@@ -1,16 +1,18 @@
 .global {
-    --element-color: #00bd7a;
-    --hover-element-color: #008657;
+    --element-color: #d23444;
+    --hover-element-color: #b92022;
     --transition: all 0.5s cubic-bezier(1, 0.46, 0, 1.29);
     --dark-color: #292929;
     --hover-dark-color: #2c2c2c;
-    --light-color: rgb(245, 245, 245);
-    --hover-light-color: rgb(200, 200, 200);
+    --light-color: #f9fffb;
+    --hover-light-color: #e5ece8;
+    --gradient-color-a: #d23c52;
+    --gradient-color-b: #ff1956;
 }
 
 .dark {
-    --color: #F5F5F5;
-    --hover-color: #c8c8c8;
+    --color: #f9fffb;
+    --hover-color: #e5ece8;
     --background: #292929;
     --hover-background: #2c2c2c;
     --background-element: #424242;
@@ -23,8 +25,8 @@
 .light {
     --color: #151515;
     --hover-color: #2c2c2c;
-    --background: rgb(245, 245, 245);
-    --hover-background: rgb(200, 200, 200);
+    --background: #f9fffb;
+    --hover-background: #e5ece8;
     --background-element: #c2c2c2;
     --hover-background-element: #a5a5a5;
     --background-transparent: rgba(204, 204, 204, 0.8);
