@@ -6,7 +6,7 @@
             <div id="java" class="nav-settings-btn">JAVA</div>
             <div id="resolution" class="nav-settings-btn">RÉSOLUTION</div>
             <div id="launcher" class="nav-settings-btn">LAUNCHER</div>
-            <!--<div id="credits" class="nav-settings-btn">CRÉDITS</div>-->
+            <div id="credits" class="nav-settings-btn">CRÉDITS</div>
             <div id="save" class="nav-settings-btn">ACCUEIL</div>
         </div>
     </div>
@@ -25,16 +25,16 @@
     </div>
 
     <div id="java-tab" class="container-settings content-scroll">
-        <div class="titre-tab">Paramètre de votre RAM</div>
+        <div class="titre-tab">Paramètre de la RAM</div>
         <div class="settings-elements-box">
             <div class="setting-text">
-                Définition de la RAM alloué à votre jeu, une quantité plus important augmenteras les performances de
+                Définition de la RAM allouée à votre jeu, une quantité plus importante augmentera les performances de
                 votre jeu.<br>
-                A noter qu'il faut éviter de mettre une trop grande quantité sinon cela peut provoquer des pertes de
+                À noter qu'il faut éviter de mettre une trop grande quantité sinon cela peut provoquer des pertes de
                 performances sur vos autres applications.<br><br>
-                <b>-RAM Maximale:</b> Indique la quantité totale de RAM allouée à votre jeu. Il est recommandé de ne pas
+                <b>-RAM Maximale :</b> Indique la quantitée totale de RAM allouée à votre jeu. Il est recommandé de ne pas
                 dépasser 50% de la quantité totale de RAM présente sur votre PC.<br><br>
-                <b>-RAM Minimale:</b> Indique la quantité minimale de RAM allouée au démarrage de votre jeu. Il est
+                <b>-RAM Minimale :</b> Indique la quantitée minimale de RAM allouée au démarrage de votre jeu. Il est
                 recommandé de ne pas mettre plus de 4Go pour cette valeur.
             </div>
             <div class="settings-elements content-evenly">
@@ -62,21 +62,21 @@
                 Le launcher utilise une version embarquée de Java.<br>
                 Cette version est disponible dans le répertoire :<br><span class="java-path-txt"></span><br>
                 Toutefois, vous pouvez spécifier votre propre exécutable si votre jeu requiert une version de java plus
-                recente.
+                récente.
             </div>
             <div class="settings-elements content-evenly">
                 <input type="text" class="java-path-input-text" disabled>
                 <input type="file" class="java-path-input-file" accept="application/octet-stream" />
                 <div class="java-path-box">
                     <div class="java-path-set java-path-btn">Changer</div>
-                    <div class="java-path-reset java-path-btn">Par defaut</div>
+                    <div class="java-path-reset java-path-btn">Par défaut</div>
                 </div>
             </div>
         </div>
     </div>
 
     <div id="resolution-tab" class="container-settings">
-        <div class="titre-tab">Paramètres de resolution Minecraft</div>
+        <div class="titre-tab">Paramètres de résolution de Minecraft</div>
         <div class="settings-elements-box">
             <div class="setting-text">
                 Définissez une résolution personnalisée afin d'avoir un jeu adapté à votre écran.<br>
@@ -89,7 +89,7 @@
                     <div class="size-cross"></div>
                     <input type="number" class="height-size input-resolution">
                 </div>
-                <div class="size-reset size-btn">Par defaut</div>
+                <div class="size-reset size-btn">Par défaut</div>
             </div>
         </div>
     </div>
@@ -101,15 +101,15 @@
                 Ce paramètre détermine le nombre maximum de fichiers pouvant être téléchargés simultanément lors de la
                 mise à jour ou du téléchargement de ressources.<br><br>
 
-                Veuillez noter que la modification de ce paramètre peut affecter les performances de
+                Veuillez noter que la modification de ce paramètre peut affecter vos performances lors du 
                 téléchargement.<br>
-                Il est recommandé de ne pas dépasser les limites recommandées par défaut,<br>
-                sauf si vous rencontrez des problèmes spécifiques de connectivité.
+                Il est recommandé de ne pas dépasser la limite recommandées par défaut.<br>
+                Réduisez ce paramètre si vous rencontrez des problèmes spécifiques de connectivité.
             </div>
             <div class="settings-elements content-center">
                 <input type="number" class="max-files input-max-files">
                 <p>Fichiers</p>
-                <div class="max-files-reset max-files-btn">Par defaut</div>
+                <div class="max-files-reset max-files-btn">Par défaut</div>
             </div>
         </div>
 
@@ -152,5 +152,25 @@
                 <div class="close-none close-btn">Environnement SILICON</div>
             </div>
         </div> -->
+    </div>
+
+    <div id="credits-tab" class="container-settings">
+        <div class="titre-tab">Crédits</div>
+        <div class="credits-elements-box">
+            <div class="credits-text">
+                <h2>Fallen Kingdom</h2>
+                <p>
+                    Organisation : dla beatmaker<br/>
+                    Modérateur : dla beatmaker
+                </p>
+            </div>
+            <hr>
+            <div class="credits-subtext">
+                <p>
+                    Launcher original de <a href="https://github.com/luuxis">Luuxis</a>.<br/>
+                    Launcher modifié par <a href="https://github.com/saurfort">SaurFort</a>.
+                </p>
+            </div>
+        </div>
     </div>
 </div>
