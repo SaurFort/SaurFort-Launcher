@@ -1,15 +1,15 @@
 {
     "name": "saurfort-launcher",
     "preductname": "SaurFort's Launcher",
-    "version": "2.2.0",
+    "version": "2.2.1",
     "description": "Launcher Mincraft pour les serveurs de SaurFort",
     "main": "src/app.js",
     "author": {
-        "name": "luuxis, SaurFort, Inc.",
+        "name": "luuxis, Inc., SaurFort",
         "email": "contact@saurfort.fr",
         "url": "https://github.com/saurfort"
     },
-    "url": "http://launcher.saurfort.fr/release",
+    "url": "http://localhost/a",
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",
