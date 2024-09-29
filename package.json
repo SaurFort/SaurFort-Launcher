@@ -9,7 +9,7 @@
         "email": "contact@saurfort.fr",
         "url": "https://github.com/saurfort"
     },
-    "url": "http://localhost/a",
+    "url": "http://launcher.saurfort.fr/release",
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",
