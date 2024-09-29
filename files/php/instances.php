@@ -24,7 +24,7 @@ $instance['hypixel'] = array_merge($instance['hypixel'], array(
         "nameServer" => "Hypixel",
         "ip" => "mc.hypixel.net",
         "port" => 25565,
-        "icon" => "http://launcher.saurfort.fr/release/files/images/hypixel/logo.png"
+        "icon" => "http://launcher.saurfort.fr/dev/files/images/hypixel/logo.png" // Ajouté ici
     )
 ));
 
@@ -42,7 +42,7 @@ $instance['PokeMoonX'] = array_merge($instance['PokeMoonX'], array(
         "nameServer" => "PokeMoonX",
         "ip" => "178.32.106.234",
         "port" => 25599,
-        "icon" => "http://launcher.saurfort.fr/release/files/images/default.png"
+        "icon" => "http://launcher.saurfort.fr/dev/files/images/default.png" // Ajouté ici
     )
 ));
 ?>

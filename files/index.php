@@ -24,15 +24,16 @@ if ($instance_param == 'null') {
 
         $url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]?instance=$value";
 
+        // Déterminer l'URL de l'icône
         $icon_path_relative = "files/images/$value/logo.png";
-        $icon_path_absolute = "/home/sc1bgah3028/saurfort/launcher/offline/$icon_path_relative";
+        $icon_path_absolute = "/home/sc1bgah3028/saurfort/launcher/dev/$icon_path_relative";
 
         if (!file_exists($icon_path_absolute)) {
             $icon_path_relative = "files/images/default.png";
-            $icon_path_absolute = "/home/sc1bgah3028/saurfort/launcher/offline/$icon_path_relative";
+            $icon_path_absolute = "/home/sc1bgah3028/saurfort/launcher/dev/$icon_path_relative";
         }
 
-        $icon_url = "http://$_SERVER[HTTP_HOST]/offline/$icon_path_relative";
+        $icon_url = "http://$_SERVER[HTTP_HOST]/dev/$icon_path_relative";
 
         $instance[$value] = array(
             "name" => $value,
@@ -50,22 +51,15 @@ if ($instance_param == 'null') {
 
 $instance_path = "instances/$instance_param";
 if (file_exists($instance_path)) {
-    include 'php/instances.php';
-    $instance_info = $instance[$instance_param] ?? array();
+    //include 'php/instances.php';
 
-    $icon_path_relative = "files/images/$instance_param/logo.png";
-    $icon_path_absolute = "/home/sc1bgah3028/saurfort/launcher/offline/$icon_path_relative";
+    //$instance_info = $instance[$instance_param];
 
-    if (!file_exists($icon_path_absolute)) {
-        $icon_path_relative = "files/images/default.png";
-        $icon_path_absolute = "/home/sc1bgah3028/saurfort/launcher/offline/$icon_path_relative";
-    }
 
-    $icon_url = "http://$_SERVER[HTTP_HOST]/offline/$icon_path_relative";
-    $instance_info['status']['icon'] = $icon_url;
-
-    echo json_encode($instance_info);
+    echo /*json_encode($instance_info),*/ dirToArray("instances/$instance_param", $instance_param);
 } else {
     echo json_encode([]);
 }
+
+//echo dirToArray("instances/$instance_param");
 ?>
